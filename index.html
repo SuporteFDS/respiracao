@@ -9,7 +9,9 @@
 <body>
   <div class="container">
     <div id="respiracao-count">Respirações: 0</div>
-    <button id="botao-respiracao" onmousedown="iniciarRespiracao()" onmouseup="finalizarRespiracao()" onmouseleave="finalizarRespiracao()">Respirar</button>
+    <button id="botao-respiracao" 
+            onmousedown="iniciarRespiracao()" onmouseup="finalizarRespiracao()" onmouseleave="finalizarRespiracao()"
+            ontouchstart="iniciarRespiracao()" ontouchend="finalizarRespiracao()" ontouchcancel="finalizarRespiracao()">Respirar</button>
     <button id="reiniciar-contagem" onclick="reiniciarContagem()">Reiniciar Contagem</button>
   </div>
   
